@@ -30,7 +30,7 @@ I made this custom ROM to bring Google Glass back to life after more than 13 yea
 1. Download this repository
 2. Download an ExplorerOS build from "Builds"
 3. Install ADB & Fastboot drivers (you can use my other tool - Glassy)
-4. Unpack the ExplorerOS build into the ``builds/`` folder
+4. Unpack the ExplorerOS build into the ``builds/ExplorerOS-<version>`` folder
 5. Enable USB Debugging on your Glass
 6. Connect your Glass to the PC and run **ExplorerFlasher.exe**
 
