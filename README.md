@@ -54,3 +54,28 @@ I made this custom ROM to bring Google Glass back to life after more than 13 yea
 # Support
 
 We have a discord server! [Join ExplorerOS Discord Server](https://discord.gg/DSkWE3JjG)
+
+
+# System itself
+
+##### Home screen:
+
+<img src="img/screenshot1.png" width=320 height=180>
+
+- Use the touchpad to navigate between cards
+- Tap once to select a new Glassface
+- Press the Camera button to activate Gemini
+
+##### Weather Card:
+
+<img src="img/screenshot2.png" width=320 height=180>
+
+- Tap once to update the widget info
+
+##### Gemini Demo:
+
+<img src="img/screenshot3.png" width=320 height=180>
+
+<img src="img/screenshot4.png" width=320 height=180>
+
+- Press the Camera button to close Gemini
