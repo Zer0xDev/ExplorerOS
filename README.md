@@ -14,18 +14,21 @@ I made this custom ROM to bring Google Glass back to life after more than 13 yea
 - Brand new launcher
 - Gemini integration
 - Improved battery life
-- Customization (15+ Glassfaces)
 - Modern design
 
 # Builds
 
-| Title | Version | Channel | Download
-|-------| --------|--------|---------|
-| ExplorerOS 26.0 Public Beta 1 | 26.0 (200626PB1) | Stable | [Download](https://drive.google.com/drive/folders/1sthRXSZ63CTTSfoUvg8625V3FmW4pmbe?usp=sharing) |
+| Title | Version | Channel | Download | Info
+|-------| --------|--------|---------|---------|
+| ExplorerOS 26.0 Public Beta 1 | 26.0 (200626PB1) | Stable Beta | [Download](https://drive.google.com/drive/folders/1sthRXSZ63CTTSfoUvg8625V3FmW4pmbe?usp=sharing) | Very old, Install Public Beta 2 |
+| ExplorerOS 26.0 Public Beta 2 | 26.0 (26PB7) | Stable Beta | [Download](https://drive.google.com/drive/folders/1sthRXSZ63CTTSfoUvg8625V3FmW4pmbe?usp=sharing) | New Design |
 
 # Installation (currently Windows only)
 
 #### **Before installing**: see "Post-install"
+
+> [!WARNING]
+> Make sure there are no spaces in the path to the firmware, sometimes ADB incorrectly sends folders that contain spaces
 
 1. Download this repository
 2. Download an ExplorerOS build from "Builds"
@@ -39,8 +42,9 @@ I made this custom ROM to bring Google Glass back to life after more than 13 yea
 # Post-install
 
 1. Go to [Weather API](https://www.weatherapi.com) and get your API Key (free)
-2. Go to [Open Router](https://openrouter.ai), add $5 to your balance, and get your API Key (paid)
-3. To use AI, you need a Python Flask server. If you don't want to set it up, you can use my server instead.
+2. Go to [News API](https://www.newsapi.org) and get your API Key (free)
+3. Go to [Open Router](https://openrouter.ai), add $5 to your balance, and get your API Key (paid)
+4. To use AI, you need a Python Flask server. If you don't want to set it up, you can use my server instead.
 
 # Server Setup
 
@@ -58,24 +62,29 @@ We have a discord server! [Join ExplorerOS Discord Server](https://discord.gg/DS
 
 # System itself
 
-##### Home screen:
+##### Home Page and Standby:
 
 <img src="img/screenshot1.png" width=320 height=180>
 
-- Use the touchpad to navigate between cards
-- Tap once to select a new Glassface
-- Press the Camera button to activate Gemini
-
-##### Weather Card:
+- Tap once to exit Standby Mode
+- Press CAMERA Button to activate Gemini
 
 <img src="img/screenshot2.png" width=320 height=180>
 
-- Tap once to update the widget info
+- Switch between pages using Touchpad
 
-##### Gemini Demo:
+#### Widgets Page:
 
 <img src="img/screenshot3.png" width=320 height=180>
 
+- Tap once to show more
+- Use Touchpad to scroll
+
 <img src="img/screenshot4.png" width=320 height=180>
+
+
+##### Gemini Demo:
+
+<img src="img/screenshot6.png" width=320 height=180>
 
 - Press the Camera button to close Gemini
