@@ -2,9 +2,30 @@ import requests
 import json
 import asyncio
 import datetime
+import random
 from flask import *
 
 app = Flask(__name__)
+
+@app.route("/get_latest_news", methods=['GET'])
+def get_latest_news():
+    api_key = request.args.get("key")
+    keyword = ""
+    keyword_gen = random.randint(1,5)
+    if (keyword_gen == 1) :
+        keyword = "apple"
+    elif (keyword_gen == 2) :
+        keyword = "google"
+    elif (keyword_gen == 3):
+        keyword = "rayban"
+    elif (keyword_gen == 4):
+        keyword = "meta"
+    elif (keyword_gen == 5):
+        keyword = "samsung"
+        
+    r = requests.get(url=f"http://newsapi.org/v2/everything?q={keyword}&apikey={api_key}&language=en&sortBy=popularity")
+
+    return r.json()
 
 @app.route("/credits", methods=["GET"])
 def get_credits_info():
@@ -85,6 +106,14 @@ GLASS_TAKE_A_PICTURE
 If the user asks to record a video, respond with:
 
 GLASS_RECORD_A_VIDEO
+
+If the user asks to start a stopwatch, respond with:
+
+GLASS_START_STOPWATCH
+
+If the user asks to open gallery, respond with:
+
+GLASS_OPEN_GALLERY
 
 You may answer any other questions normally. For any other question, respond like this:
 
